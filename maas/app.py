@@ -1,8 +1,6 @@
 from aiohttp import web
 from asyncworker import App, RouteTypes
 
-from contrib.parser import Tree
-
 app = App("", "", "", 1)
 
 
