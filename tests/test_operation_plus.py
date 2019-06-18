@@ -15,6 +15,4 @@ class OperationTest(BaseApiTestCase):
         result = await self.client.post("/", json={"left": 10, "right": 10})
         self.assertEqual(200, result.status)
         data = await result.json()
-        self.assertEqual({
-            'result': 20
-        }, data)
+        self.assertEqual({"result": 20}, data)
